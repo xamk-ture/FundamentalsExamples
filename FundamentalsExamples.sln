@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryCatchExample", "TryCatch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullExample", "NullExample\NullExample.csproj", "{E8C33E38-BAFF-486B-85D3-8674705AE443}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntParseExamples", "IntParseExamples\IntParseExamples.csproj", "{899591A0-CEBE-49BD-82B9-9517192FF463}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{E8C33E38-BAFF-486B-85D3-8674705AE443}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8C33E38-BAFF-486B-85D3-8674705AE443}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8C33E38-BAFF-486B-85D3-8674705AE443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{899591A0-CEBE-49BD-82B9-9517192FF463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{899591A0-CEBE-49BD-82B9-9517192FF463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{899591A0-CEBE-49BD-82B9-9517192FF463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{899591A0-CEBE-49BD-82B9-9517192FF463}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

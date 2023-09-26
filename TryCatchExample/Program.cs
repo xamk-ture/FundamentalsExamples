@@ -8,9 +8,7 @@
 
             DivideByZeroExceptionExample();
 
-            Console.WriteLine("Test");
-
-            Console.ReadLine();
+           
         }
 
         private static void DivideByZeroExceptionExample()
