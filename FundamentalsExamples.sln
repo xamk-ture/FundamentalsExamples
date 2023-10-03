@@ -11,21 +11,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooleanExample", "BooleanEx
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryCatchExample", "TryCatchExample\TryCatchExample.csproj", "{977465DF-6D8D-4909-9A59-CD5504B7AA53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullExample", "NullExample\NullExample.csproj", "{E8C33E38-BAFF-486B-85D3-8674705AE443}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullExample", "NullExample\NullExample.csproj", "{E8C33E38-BAFF-486B-85D3-8674705AE443}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntParseExamples", "IntParseExamples\IntParseExamples.csproj", "{899591A0-CEBE-49BD-82B9-9517192FF463}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntParseExamples", "IntParseExamples\IntParseExamples.csproj", "{899591A0-CEBE-49BD-82B9-9517192FF463}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryExample", "DictionaryExample\DictionaryExample.csproj", "{FBE741E0-10D0-41F1-9A42-4DBD0121A9AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DictionaryExample", "DictionaryExample\DictionaryExample.csproj", "{FBE741E0-10D0-41F1-9A42-4DBD0121A9AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSleepExample", "ThreadSleepExample\ThreadSleepExample.csproj", "{0A2E161B-021C-4D9C-BC63-8E7C3BD2E947}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadSleepExample", "ThreadSleepExample\ThreadSleepExample.csproj", "{0A2E161B-021C-4D9C-BC63-8E7C3BD2E947}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StopWatchExample", "StopWatchExample\StopWatchExample.csproj", "{E84594DC-117E-4BD6-9034-744DAD047AD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StopWatchExample", "StopWatchExample\StopWatchExample.csproj", "{E84594DC-117E-4BD6-9034-744DAD047AD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForExample", "ForExample\ForExample.csproj", "{FB296609-3C22-476D-BA1F-0329EE214D79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForExample", "ForExample\ForExample.csproj", "{FB296609-3C22-476D-BA1F-0329EE214D79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListExample", "ListExample\ListExample.csproj", "{30BF1426-1B91-4E0B-8D0C-B5A8E3456199}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListExample", "ListExample\ListExample.csproj", "{30BF1426-1B91-4E0B-8D0C-B5A8E3456199}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayExample", "ArrayExample\ArrayExample.csproj", "{F70C4F77-4A05-40C2-9A9E-0E9B904A1828}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayExample", "ArrayExample\ArrayExample.csproj", "{F70C4F77-4A05-40C2-9A9E-0E9B904A1828}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForEachExample", "ForEachExample\ForEachExample.csproj", "{A87D422D-0591-4127-A47F-7B1771E6F5A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{F70C4F77-4A05-40C2-9A9E-0E9B904A1828}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F70C4F77-4A05-40C2-9A9E-0E9B904A1828}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F70C4F77-4A05-40C2-9A9E-0E9B904A1828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A87D422D-0591-4127-A47F-7B1771E6F5A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A87D422D-0591-4127-A47F-7B1771E6F5A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A87D422D-0591-4127-A47F-7B1771E6F5A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A87D422D-0591-4127-A47F-7B1771E6F5A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
