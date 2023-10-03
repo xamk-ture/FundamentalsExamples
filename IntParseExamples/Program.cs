@@ -11,8 +11,6 @@
 
             int numero = 0;
 
-        
-
             //tämä kaatuu, koska merkkijono sisältää muitakin merkkejä kuin numeroja
             try
             {

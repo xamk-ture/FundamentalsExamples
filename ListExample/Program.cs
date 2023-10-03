@@ -19,6 +19,15 @@
             // 1
             // 2
             // 3
+
+
+            //Toinen tapa luoda lista
+            List<int> numbers2 = new List<int>() { 1, 2, 3 };
+
+            foreach (int number in numbers2)  // Tulostetaan jokainen numero listasta
+            {
+                Console.WriteLine(number);
+            }
         }
     }
 }
