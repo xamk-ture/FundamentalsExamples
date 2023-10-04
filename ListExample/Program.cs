@@ -21,13 +21,38 @@
             // 3
 
 
-            //Toinen tapa luoda lista
-            List<int> numbers2 = new List<int>() { 1, 2, 3 };
+            int indeksiDemo = numbers[2];
 
-            foreach (int number in numbers2)  // Tulostetaan jokainen numero listasta
+            Console.WriteLine($"Indeksi demo {indeksiDemo}");
+
+            numbers.RemoveAt(0);
+
+            Console.WriteLine("RemoveAt demo");
+
+            foreach (int number in numbers)  // Tulostetaan jokainen numero listasta
             {
                 Console.WriteLine(number);
             }
+
+
+
+            numbers.Remove(2);  // Poistetaan arvo 2 listasta
+
+            Console.WriteLine("Remove demo");
+
+            foreach (int number in numbers)  // Tulostetaan jokainen numero listasta
+            {
+                Console.WriteLine(number);
+            }
+
+
+            //Toinen tapa luoda lista
+            //List<int> numbers2 = new List<int>() { 1, 2, 3 };
+
+            //foreach (int number in numbers2)  // Tulostetaan jokainen numero listasta
+            //{
+            //    Console.WriteLine(number);
+            //}
         }
     }
 }

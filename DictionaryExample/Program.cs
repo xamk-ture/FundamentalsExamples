@@ -4,6 +4,17 @@
     {
         static void Main(string[] args)
         {
+
+            //Person example
+            Dictionary<string, string> persons = new Dictionary<string, string>();
+            persons.Add("123456-123A", "Matti Meikäläinen");
+            string keyPerson = persons["123456-123A"];
+
+            //Highscore example
+            Dictionary<string, double> highScores = new Dictionary<string, double>();
+            highScores.Add("Jack", 20.5);
+
+
             // Luot uuden sanakirjan, joka voi pitää sisällään merkkijonoja.
             Dictionary<string, string> sanakirja = new Dictionary<string, string>();
 
@@ -30,6 +41,15 @@
             foreach (string avain in sanakirja.Keys)
             {
                 Console.WriteLine(avain);
+            }
+
+            //Tulostetaan kaikki avaimet ja niiden arvot 
+            //Huom KeyValuePair<string, string> voi ilmaista lyhyemmin myös käyttämällä vain var avainsanaa
+            //Eli foreach (var sana in sanakirja)
+            //Tässä esimerkissä käytetään oikea tyyppiä, jotta esimerkki on selkeämpi
+            foreach (KeyValuePair<string,string> sana in sanakirja)
+            {
+                Console.WriteLine($"Key:{sana.Key} Value:{sana.Value}");
             }
 
             // Oletetaan, että käyttäjä valitsee kielen (englanti tai suomi).

@@ -10,11 +10,15 @@
             string numeroJono = "123";
 
             int numero = 0;
+            int numero2 = 0;
 
             //tämä kaatuu, koska merkkijono sisältää muitakin merkkejä kuin numeroja
             try
             {
                 numero = int.Parse(merkkiJono);
+
+                //toinen tapa tehdä konvertio
+                numero2 = Convert.ToInt16(merkkiJono);
             }
             catch (Exception ex)
             {
@@ -23,7 +27,14 @@
             }
 
             //tämä onnistuu, koska merkkijono sisältää vain numeroja
-            numero = int.Parse(numeroJono); 
+
+            Console.WriteLine("int.parse konversio");
+            numero = int.Parse(numeroJono);
+            Console.WriteLine(numero);
+
+            Console.WriteLine("Convert.ToInt32 konversio");
+            numero2 = Convert.ToInt32(numeroJono);
+            Console.WriteLine(numero2);
 
             bool onnistuikoKonversio = false;
 

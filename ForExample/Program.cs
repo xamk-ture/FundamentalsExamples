@@ -17,6 +17,11 @@
             {
                 Console.WriteLine(hedelmat[i]);
             }
+
+            foreach (var hedelma in hedelmat)
+            {
+                Console.WriteLine(hedelma);
+            }
         }
     }
 }
