@@ -24,6 +24,8 @@
             string appleKuvaus = sanakirja["Apple"];  // Haet arvon avaimella "Apple".
             string bananaKuvaus = sanakirja["Banana"];  // Haet arvon avaimella "Banana".
 
+            sanakirja["Banana"] = "Uusi kuvaus banaanille"; //Muutetaan arvoa avaimella "Banana"    
+
             Console.WriteLine(appleKuvaus);  // Tulostat arvon konsoliin.
             Console.WriteLine(bananaKuvaus);  // Tulostat toisen arvon konsoliin.
 

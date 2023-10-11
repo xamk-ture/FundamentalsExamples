@@ -1,4 +1,6 @@
-﻿namespace FunctionsExample
+﻿using System.Collections.Generic;
+
+namespace FunctionsExample
 {
     internal class Program
     {
@@ -24,6 +26,13 @@
             PrintList(returnList);
 
             RemoveItemsFromList(returnList, 2);
+
+            //poistetaan listasta x-määrä asioita
+            for (int i = 0; i < 2; i++)
+            {
+                returnList.RemoveAt(0);
+            }
+
             Console.WriteLine("Lista, jonka RemoveItemsFromList poisti");
         }
 
@@ -77,7 +86,7 @@
                 demoList.Add($"Item {i}");
             }
 
-            return new List<string>();
+            return demoList;
         }
 
         static void RemoveItemsFromList(List<string> list, int numberOfItemsToRemove)
