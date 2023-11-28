@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContinueKeyWordExamples", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreakKeyWordExample", "BreakKeyWordExample\BreakKeyWordExample.csproj", "{E31A27B7-5A9E-405D-AF70-4CAD69A7947B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainsExample", "ContainsExample\ContainsExample.csproj", "{F630FB3E-E9A1-45A2-92F6-4897469007F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContainsExample", "ContainsExample\ContainsExample.csproj", "{F630FB3E-E9A1-45A2-92F6-4897469007F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursionExample", "RecursionExample\RecursionExample.csproj", "{7F841E77-1B9E-4F96-84C4-21EEAE22C1D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{F630FB3E-E9A1-45A2-92F6-4897469007F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F630FB3E-E9A1-45A2-92F6-4897469007F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F630FB3E-E9A1-45A2-92F6-4897469007F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F841E77-1B9E-4F96-84C4-21EEAE22C1D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F841E77-1B9E-4F96-84C4-21EEAE22C1D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F841E77-1B9E-4F96-84C4-21EEAE22C1D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F841E77-1B9E-4F96-84C4-21EEAE22C1D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
