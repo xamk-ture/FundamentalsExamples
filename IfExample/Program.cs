@@ -26,6 +26,20 @@
             }
 
 
+            Console.WriteLine("Give your name");
+
+            string name = Console.ReadLine();
+
+            //name.Length retruns how long the name string is
+            if(name.Length >= 10)
+            {
+                Console.WriteLine("Your name is longer than 10 letters");
+            }
+            else
+            {
+                Console.WriteLine("Your name is shorter than 10 letters")
+            }
+
         }
     }
 }
