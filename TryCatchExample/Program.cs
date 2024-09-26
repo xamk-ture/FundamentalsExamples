@@ -6,9 +6,35 @@
         {
             Console.WriteLine("Hello, World!");
 
-            DivideByZeroExceptionExample();
+            IndexOutOfBoundsExample();
 
-           
+            DivideByZeroExceptionExample();
+        }
+
+        static void IndexOutOfBoundsExample()
+        {
+            int[] numbers = new int[5];
+
+            numbers[0] = 1;
+            numbers[1] = 2;
+            numbers[2] = 3;
+            numbers[3] = 4;
+            numbers[4] = 5;
+
+            Console.WriteLine(numbers[1]);
+
+            try
+            {
+                Console.WriteLine(numbers[5]); //this will crash
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine("Syötä oikea numero");
+            }
         }
 
         private static void DivideByZeroExceptionExample()
