@@ -78,5 +78,32 @@
             Console.WriteLine(translations["farewell"]);  // Tulostaa "Näkemiin"
 
         }
+
+        /// <summary>
+        /// Demo how to check if dictionary contains given key
+        /// </summary>
+        /// <param name="city"></param>
+        /// <returns></returns>
+        static int? GetCityPopulation(string city)
+        {
+            Dictionary<string, int> cities = new();
+            cities.Add("Mikkeli", 5000000);
+            cities.Add("Kuopio", 100000);
+            cities.Add("Helsinki", 500000);
+
+            int? population = null;
+
+            //Checks if dictionary has the key before trying to get the value
+            if (cities.ContainsKey(city))
+            {
+                population = cities[city];
+            }
+            else
+            {
+                Console.WriteLine("City is not found");
+            }
+
+            return population;
+        }
     }
 }
