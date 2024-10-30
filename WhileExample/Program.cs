@@ -15,6 +15,9 @@
             // The loop will continue as long as 'count' is less than or equal to 5
             while (count <= 5)
             {
+
+                break;
+
                 Console.WriteLine("Count is: " + count);
                 count++; // Increment 'count' by 1
             }

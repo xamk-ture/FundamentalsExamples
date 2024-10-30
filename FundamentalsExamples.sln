@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhileExample", "WhileExampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchExample", "SwitchExample\SwitchExample.csproj", "{90E2CD12-2895-42FB-B5FA-E11C17B14BB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumExample", "EnumExample\EnumExample.csproj", "{F86DBB01-C553-4741-A9E1-F089D81D49A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomExample", "RandomExample\RandomExample.csproj", "{0BA00ABF-22D7-4295-B002-409E1118B785}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +145,14 @@ Global
 		{90E2CD12-2895-42FB-B5FA-E11C17B14BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90E2CD12-2895-42FB-B5FA-E11C17B14BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90E2CD12-2895-42FB-B5FA-E11C17B14BB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F86DBB01-C553-4741-A9E1-F089D81D49A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F86DBB01-C553-4741-A9E1-F089D81D49A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F86DBB01-C553-4741-A9E1-F089D81D49A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F86DBB01-C553-4741-A9E1-F089D81D49A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BA00ABF-22D7-4295-B002-409E1118B785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BA00ABF-22D7-4295-B002-409E1118B785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BA00ABF-22D7-4295-B002-409E1118B785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BA00ABF-22D7-4295-B002-409E1118B785}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

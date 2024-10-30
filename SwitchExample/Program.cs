@@ -7,6 +7,19 @@
             Console.WriteLine("Enter a number between 1 and 3:");
             int choice = Convert.ToInt32(Console.ReadLine());
 
+            string stringChoice = "Test";
+
+            switch(stringChoice)
+            {
+                case "Demo":
+                    Console.WriteLine("Demo triggered");
+                    int dd = 1 + 1;
+                    break;
+                case "Test":
+                    Console.WriteLine("Test triggered");
+                    break;
+            }
+
             // Switch statement to handle different cases for 'choice'
             switch (choice)
             {
@@ -25,6 +38,21 @@
                 default:
                     Console.WriteLine("Invalid choice. Please enter a number between 1 and 3.");
                     break;
+            }
+
+            
+
+            if(choice == 1)
+            {
+
+            }
+            else if(choice == 2)
+            {
+
+            }
+            else
+            {
+
             }
 
             Console.WriteLine("Switch statement ended.");

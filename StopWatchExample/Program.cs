@@ -10,7 +10,7 @@ namespace StopWatchExample
             stopWatch.Start();  // Käynnistää ajanoton.
 
             // Oletetaan, että tässä on koodi, jonka suoritusaikaa haluat mitata.
-            System.Threading.Thread.Sleep(1000);  // Odottaa 1 sekunti (1000 millisekuntia).
+            Thread.Sleep(1000);  // Odottaa 1 sekunti (1000 millisekuntia).
 
             stopWatch.Stop();  // Pysäyttää ajanoton.
 
