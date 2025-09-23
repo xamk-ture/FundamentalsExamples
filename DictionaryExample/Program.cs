@@ -1,109 +1,120 @@
-﻿namespace DictionaryExample
+using System;
+using System.Collections.Generic;
+
+namespace DictionaryExample
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.WriteLine("=== Dictionary CRUD Examples ===\n");
 
-            //Person example
-            Dictionary<string, string> persons = new Dictionary<string, string>();
-            persons.Add("123456-123A", "Matti Meikäläinen");
-            string keyPerson = persons["123456-123A"];
+            // Create an empty dictionary for fruit descriptions.
+            Dictionary<string, string> fruitDict = new();
 
-            //Highscore example
-            Dictionary<string, double> highScores = new Dictionary<string, double>();
-            highScores.Add("Jack", 20.5);
+            // --- Demonstrations ---
+            AddEntry(fruitDict, "Apple", "A fruit that is usually red or green.");
+            AddEntry(fruitDict, "Banana", "A long and yellow fruit.");
+            AddEntry(fruitDict, "Orange", "A round, orange-colored citrus fruit.");
 
+            PrintAll(fruitDict);
 
-            // Luot uuden sanakirjan, joka voi pitää sisällään merkkijonoja.
-            Dictionary<string, string> sanakirja = new Dictionary<string, string>();
+            FetchValue(fruitDict, "Banana");
+            FetchValue(fruitDict, "Pear");          // key not present
 
-            sanakirja.Add("Apple", "Hedelmä, joka on yleensä punainen tai vihreä.");  // Lisäät arvoparin sanakirjaan.
-            sanakirja.Add("Banana", "Pitkä ja keltainen hedelmä.");  // Lisäät toisen arvoparin sanakirjaan.
-
-            string appleKuvaus = sanakirja["Apple"];  // Haet arvon avaimella "Apple".
-            string bananaKuvaus = sanakirja["Banana"];  // Haet arvon avaimella "Banana".
-
-            sanakirja["Banana"] = "Uusi kuvaus banaanille"; //Muutetaan arvoa avaimella "Banana"    
-
-            Console.WriteLine(appleKuvaus);  // Tulostat arvon konsoliin.
-            Console.WriteLine(bananaKuvaus);  // Tulostat toisen arvon konsoliin.
-
-            // Tuloste:
-            // Hedelmä, joka on yleensä punainen tai vihreä.
-            // Pitkä ja keltainen hedelmä.
-
-            //tulosta kaiikki dictionaryn valuet
-            foreach (string value in sanakirja.Values)
-            {
-                Console.WriteLine(value);
-            }
-
-            //tulosta kaikki dictionaryn avaimet
-            foreach (string avain in sanakirja.Keys)
-            {
-                Console.WriteLine(avain);
-            }
-
-            //Tulostetaan kaikki avaimet ja niiden arvot 
-            //Huom KeyValuePair<string, string> voi ilmaista lyhyemmin myös käyttämällä vain var avainsanaa
-            //Eli foreach (var sana in sanakirja)
-            //Tässä esimerkissä käytetään oikea tyyppiä, jotta esimerkki on selkeämpi
-            foreach (KeyValuePair<string,string> sana in sanakirja)
-            {
-                Console.WriteLine($"Key:{sana.Key} Value:{sana.Value}");
-            }
-
-            // Oletetaan, että käyttäjä valitsee kielen (englanti tai suomi).
-            string valittuKieli = "fi";  // esimerkiksi suomi
-
-            // Luodaan sanakirjat eri kielille.
-            Dictionary<string, string> englishTranslations = new Dictionary<string, string>
-            {
-                { "greeting", "Hello" },
-                { "farewell", "Goodbye" }
-            };
-
-            Dictionary<string, string> finnishTranslations = new Dictionary<string, string>
-            {
-                { "greeting", "Hei" },
-                { "farewell", "Näkemiin" }
-            };
-
-            // Valitaan oikea sanakirja käyttäjän valitseman kielen perusteella.
-            Dictionary<string, string> translations = valittuKieli == "en" ? englishTranslations : finnishTranslations;
-
-            // Tulostetaan tervehdys ja hyvästit käyttäjän valitsemalla kielellä.
-            Console.WriteLine(translations["greeting"]);  // Tulostaa "Hei"
-            Console.WriteLine(translations["farewell"]);  // Tulostaa "Näkemiin"
-
+            UpdateEntry(fruitDict, "Banana", "Sweet yellow fruit, rich in potassium.");
+            RemoveEntry(fruitDict, "Orange");
+            PrintKeys(fruitDict);
+            PrintValues(fruitDict);
+            PrintAll(fruitDict);
         }
 
-        /// <summary>
-        /// Demo how to check if dictionary contains given key
-        /// </summary>
-        /// <param name="city"></param>
-        /// <returns></returns>
-        static int? GetCityPopulation(string city)
+        // ---------- Core Operations ----------
+
+        /// <summary>Adds a new key/value pair if the key does not exist.</summary>
+        static void AddEntry(Dictionary<string, string> dict, string key, string value)
         {
-            Dictionary<string, int> cities = new();
-            cities.Add("Mikkeli", 5000000);
-            cities.Add("Kuopio", 100000);
-            cities.Add("Helsinki", 500000);
-
-            int? population = null;
-
-            //Checks if dictionary has the key before trying to get the value
-            if (cities.ContainsKey(city))
+            if (dict.TryAdd(key, value))
             {
-                population = cities[city];
+                Console.WriteLine($"Added: {key} -> {value}");
             }
             else
             {
-                Console.WriteLine("City is not found");
+                Console.WriteLine($"Key \"{key}\" already exists. No change made.");
             }
+        }
 
-            return population;
+        /// <summary>Removes an entry if the key exists.</summary>
+        static void RemoveEntry(Dictionary<string, string> dict, string key)
+        {
+            if (dict.Remove(key))
+            {
+                Console.WriteLine($"Removed key \"{key}\".");
+            }
+            else
+            {
+                Console.WriteLine($"Cannot remove: key \"{key}\" was not found.");
+            }
+        }
+
+        /// <summary>Updates the value for a given key, or reports if key is missing.</summary>
+        static void UpdateEntry(Dictionary<string, string> dict, string key, string newValue)
+        {
+            if (dict.ContainsKey(key))
+            {
+                dict[key] = newValue;
+                Console.WriteLine($"Updated \"{key}\" to -> {newValue}");
+            }
+            else
+            {
+                Console.WriteLine($"Cannot update: key \"{key}\" not found.");
+            }
+        }
+
+        /// <summary>Fetches and prints the value for a key if it exists.</summary>
+        static void FetchValue(Dictionary<string, string> dict, string key)
+        {
+            if (dict.TryGetValue(key, out string value))
+            {
+                Console.WriteLine($"Fetched: {key} -> {value}");
+            }
+            else
+            {
+                Console.WriteLine($"Key \"{key}\" not found.");
+            }
+        }
+
+        // ---------- Listing Helpers ----------
+
+        /// <summary>Prints all keys.</summary>
+        static void PrintKeys(Dictionary<string, string> dict)
+        {
+            Console.WriteLine("\n-- Keys --");
+            foreach (var key in dict.Keys)
+            {
+                Console.WriteLine(key);
+            }
+        }
+
+        /// <summary>Prints all values.</summary>
+        static void PrintValues(Dictionary<string, string> dict)
+        {
+            Console.WriteLine("\n-- Values --");
+            foreach (var value in dict.Values)
+            {
+                Console.WriteLine(value);
+            }
+        }
+
+        /// <summary>Prints all key/value pairs.</summary>
+        static void PrintAll(Dictionary<string, string> dict)
+        {
+            Console.WriteLine("\n-- All Entries --");
+            foreach (KeyValuePair<string, string> kv in dict)
+            {
+                Console.WriteLine($"Key: {kv.Key} | Value: {kv.Value}");
+            }
         }
     }
 }
