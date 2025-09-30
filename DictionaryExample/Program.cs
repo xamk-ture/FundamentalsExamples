@@ -91,7 +91,7 @@ namespace DictionaryExample
         static void PrintKeys(Dictionary<string, string> dict)
         {
             Console.WriteLine("\n-- Keys --");
-            foreach (var key in dict.Keys)
+            foreach (string key in dict.Keys)
             {
                 Console.WriteLine(key);
             }
@@ -101,7 +101,7 @@ namespace DictionaryExample
         static void PrintValues(Dictionary<string, string> dict)
         {
             Console.WriteLine("\n-- Values --");
-            foreach (var value in dict.Values)
+            foreach (string value in dict.Values)
             {
                 Console.WriteLine(value);
             }
