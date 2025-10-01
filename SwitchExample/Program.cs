@@ -41,7 +41,7 @@
             }
 
             
-
+            //Same in if statements, but just no code inside the statements
             if(choice == 1)
             {
 

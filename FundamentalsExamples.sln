@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumExample", "EnumExample\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomExample", "RandomExample\RandomExample.csproj", "{0BA00ABF-22D7-4295-B002-409E1118B785}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringExamples", "StringExamples\StringExamples.csproj", "{47E8E281-A297-4667-8C1C-72C64845779E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{0BA00ABF-22D7-4295-B002-409E1118B785}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BA00ABF-22D7-4295-B002-409E1118B785}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BA00ABF-22D7-4295-B002-409E1118B785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47E8E281-A297-4667-8C1C-72C64845779E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E8E281-A297-4667-8C1C-72C64845779E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E8E281-A297-4667-8C1C-72C64845779E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E8E281-A297-4667-8C1C-72C64845779E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
